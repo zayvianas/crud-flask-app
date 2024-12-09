@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block title %}
+Student Flask App with CRUD
+{% endblock %}
+{% block content %}
+<video width="100%" height="100%" autoplay muted loop>
+    <source src="{{ url_for('static', filename='header.mp4')}}" type="video/mp4">
+    
+  Your browser does not support the video tag.
+  </video>
+
+<h1>About the CRUD App</h1>
+<p>A web-based application to manage student information.</p>
+
+<h2>Key Features</h2>
+<ul>
+    <li><b>Create:</b> Easily add new student records using a web form.</li>
+    <li><b>Read:</b> View a detailed list of all students stored in the database.</li>
+    <li><b>Update:</b> Edit and update student information to keep records accurate.</li>
+    <li><b>Delete:</b> Remove student entries when necessary.</li>
+</ul>
+
+<h2>Technology Stack</h2>
+<ul>
+    <li><b>Flask:</b> A lightweight Python web framework for backend logic and routing.</li>
+    <li><b>SQLite:</b> A serverless database for storing student data securely.</li>
+    <li><b>HTML and CSS:</b> Used to design the structure and style of the web app.</li>
+    <li><b>W3.CSS:</b> A modern CSS framework integrated to enhance styling and responsiveness.</li>
+    <li><b>VS Code:</b> The integrated development environment (IDE) used for writing and managing the code.</li>
+</ul>
+
+<h2>How to Use the App</h2>
+<ol>
+    <li>Use the navigation bar at the top of the page to navigate through the app.</li>
+    <li>Click on the <b>Add Student</b> tab to input new student information into the database.</li>
+    <li>Fill out the form with the required details and submit it to add the student.</li>
+    <li>To view or manage existing students, click on the <b>Review and Edit Students</b> tab.</li>
+    <li>From the list of students:
+        <ul>
+            <li>Click <b>Edit</b> to update a student’s information.</li>
+            <li>Click <b>Delete</b> to remove a student from the database.</li>
+        </ul>
+    </li>
+</ol>
+
+<p>This project demonstrates how to create a fully functional CRUD application using Flask and SQLite, combined with a visually appealing design using W3.CSS and custom HTML/CSS.</p>
+{% endblock %}
